@@ -1,0 +1,42 @@
+.wrapper {
+    --max-width: 980px;
+    --min-margin: 1em;
+
+    width: min(var(--max-width), 100% - 2 * var(--min-margin));
+    margin-inline: auto;
+}
+
+.content-grid {
+    --max-width: 980px;
+    --min-margin: 1em;
+
+    display: grid;
+    grid-template-columns: 
+        minmax(var(--min-margin), 1fr)
+        minmax(auto, var(--max-width))
+        minmax(var(--min-margin), 1fr);
+}
+
+.content-grid > * {
+    grid-column: 2;
+}
+
+.content-grid > .full {
+    grid-column: 1 / -1;
+}
+
+.season-imgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+
+.season-imgs > *.dark {
+    background-color: lightslategray;
+}
+
+.season-imgs > * {
+    background-color: lightskyblue;
+    padding: 2em;
+}
