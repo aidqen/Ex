@@ -1,6 +1,5 @@
 
 export function TableRow({animal}) {
-    console.log(animal);
     return <tr>
         <td>{animal.type}</td>
         <td>{animal.count}</td>

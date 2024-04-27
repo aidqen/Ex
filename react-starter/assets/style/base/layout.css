@@ -40,3 +40,35 @@
     background-color: lightskyblue;
     padding: 2em;
 }
+
+.clock {
+    margin-block: 2em;
+    margin-inline: auto;
+    padding: 2em 8em;
+    border: 1px solid black;
+}
+
+.red {
+    color: red;
+}
+
+.watchers-container {
+    background-color: lightcoral;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: max-content;
+    margin-inline: auto;
+}
+
+.watchers {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1em;
+}
+
+.watchers > * {
+    margin: 1em;
+}
